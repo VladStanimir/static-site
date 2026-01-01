@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Site Under Construction</title>
+	<style>
+		:root { --bg:#0f1724; --card:#0b1220; --accent:#ffb86b; --muted:#9aa4b2; }
+		*{box-sizing:border-box}
+		html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#071029 0%, #0f1724 100%); color:#e6eef8}
+		.wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:2rem}
+		.card{max-width:800px;text-align:center;padding:3rem;border-radius:12px;background:rgba(255,255,255,0.02);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+		h1{margin:0 0 0.5rem;font-size:clamp(1.5rem,4vw,2.5rem);letter-spacing:-0.5px}
+		p{margin:0 0 1.25rem;color:var(--muted)}
+		.rocket{font-size:3rem;display:inline-block;transform-origin:center;animation:float 3s ease-in-out infinite}
+		@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+		.actions{margin-top:1rem;display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap}
+		a.btn{display:inline-block;padding:.6rem .9rem;border-radius:8px;text-decoration:none;color:#071029;background:#e6eef8;font-weight:600}
+		a.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+		footer{margin-top:1.25rem;color:var(--muted);font-size:.9rem}
+		@media (max-width:420px){.card{padding:2rem}}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<main class="card" role="main">
+			<div class="rocket" aria-hidden="true">🚧</div>
+			<h1>We're building something great</h1>
+			<p>Thanks for visiting — this site is currently under construction. Check back soon for updates.</p>
+			<div class="actions">
+				<a class="btn" href="mailto:hello@example.com">Contact</a>
+				<a class="btn ghost" href="/">Home</a>
+			</div>
+			<footer>Estimated launch: Q1 2026</footer>
+		</main>
+	</div>
+</body>
+</html>
